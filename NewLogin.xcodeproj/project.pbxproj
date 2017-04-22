@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		183D81A8EAAC0EAFC382B564 /* Pods_NewLogin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F31F3182F574365DD9F0B86 /* Pods_NewLogin.framework */; };
+		B3236E011EA86B700083C675 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B3236E001EA86B700083C675 /* GoogleService-Info.plist */; };
 		B3C077B11EA8429C0009F898 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C077B01EA8429C0009F898 /* AppDelegate.swift */; };
 		B3C077B31EA8429C0009F898 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C077B21EA8429C0009F898 /* ViewController.swift */; };
 		B3C077B61EA8429C0009F898 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3C077B41EA8429C0009F898 /* Main.storyboard */; };
@@ -15,6 +17,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1F31F3182F574365DD9F0B86 /* Pods_NewLogin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NewLogin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B3236DFF1EA85B620083C675 /* NewLogin.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = NewLogin.entitlements; sourceTree = "<group>"; };
+		B3236E001EA86B700083C675 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		B3C077AD1EA8429C0009F898 /* NewLogin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NewLogin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3C077B01EA8429C0009F898 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B3C077B21EA8429C0009F898 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +27,8 @@
 		B3C077B71EA8429C0009F898 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B3C077BA1EA8429C0009F898 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B3C077BC1EA8429C0009F898 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B90B342DE1947FDBB0512BC0 /* Pods-NewLogin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NewLogin.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NewLogin/Pods-NewLogin.debug.xcconfig"; sourceTree = "<group>"; };
+		FD2C38F08C525B475A98C388 /* Pods-NewLogin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NewLogin.release.xcconfig"; path = "Pods/Target Support Files/Pods-NewLogin/Pods-NewLogin.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +36,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				183D81A8EAAC0EAFC382B564 /* Pods_NewLogin.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		074DCFB3AF302E12DC9FD717 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B90B342DE1947FDBB0512BC0 /* Pods-NewLogin.debug.xcconfig */,
+				FD2C38F08C525B475A98C388 /* Pods-NewLogin.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		B3C077A41EA8429C0009F898 = {
 			isa = PBXGroup;
 			children = (
 				B3C077AF1EA8429C0009F898 /* NewLogin */,
 				B3C077AE1EA8429C0009F898 /* Products */,
+				074DCFB3AF302E12DC9FD717 /* Pods */,
+				BD720333FD45DD38A5E6C378 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +73,24 @@
 		B3C077AF1EA8429C0009F898 /* NewLogin */ = {
 			isa = PBXGroup;
 			children = (
+				B3236DFF1EA85B620083C675 /* NewLogin.entitlements */,
 				B3C077B01EA8429C0009F898 /* AppDelegate.swift */,
 				B3C077B21EA8429C0009F898 /* ViewController.swift */,
 				B3C077B41EA8429C0009F898 /* Main.storyboard */,
 				B3C077B71EA8429C0009F898 /* Assets.xcassets */,
 				B3C077B91EA8429C0009F898 /* LaunchScreen.storyboard */,
 				B3C077BC1EA8429C0009F898 /* Info.plist */,
+				B3236E001EA86B700083C675 /* GoogleService-Info.plist */,
 			);
 			path = NewLogin;
+			sourceTree = "<group>";
+		};
+		BD720333FD45DD38A5E6C378 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1F31F3182F574365DD9F0B86 /* Pods_NewLogin.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +100,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B3C077BF1EA8429C0009F898 /* Build configuration list for PBXNativeTarget "NewLogin" */;
 			buildPhases = (
+				D7BDC01BCACAAB811469000C /* [CP] Check Pods Manifest.lock */,
 				B3C077A91EA8429C0009F898 /* Sources */,
 				B3C077AA1EA8429C0009F898 /* Frameworks */,
 				B3C077AB1EA8429C0009F898 /* Resources */,
+				67992E391784F88A28CFDE9A /* [CP] Embed Pods Frameworks */,
+				F0268AA8A8B995F62F11F8CC /* [CP] Copy Pods Resources */,
+				B3236E021EA8B6A00083C675 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -96,7 +129,13 @@
 				TargetAttributes = {
 					B3C077AC1EA8429C0009F898 = {
 						CreatedOnToolsVersion = 8.3.1;
+						DevelopmentTeam = 8QVZCUS74U;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -124,12 +163,74 @@
 			buildActionMask = 2147483647;
 			files = (
 				B3C077BB1EA8429C0009F898 /* LaunchScreen.storyboard in Resources */,
+				B3236E011EA86B700083C675 /* GoogleService-Info.plist in Resources */,
 				B3C077B81EA8429C0009F898 /* Assets.xcassets in Resources */,
 				B3C077B61EA8429C0009F898 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		67992E391784F88A28CFDE9A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NewLogin/Pods-NewLogin-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B3236E021EA8B6A00083C675 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Fabric/run\" ae830a1647d55b1b8c048bd7d989935c969b0034 6a78a3bb424ed1f105b38502d86a2acc6ad8eee8cee2788dd4f1a04679676c3e";
+		};
+		D7BDC01BCACAAB811469000C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F0268AA8A8B995F62F11F8CC /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NewLogin/Pods-NewLogin-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B3C077A91EA8429C0009F898 /* Sources */ = {
@@ -260,8 +361,11 @@
 		};
 		B3C077C01EA8429C0009F898 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B90B342DE1947FDBB0512BC0 /* Pods-NewLogin.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = NewLogin/NewLogin.entitlements;
+				DEVELOPMENT_TEAM = 8QVZCUS74U;
 				INFOPLIST_FILE = NewLogin/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = vn.unlocked.NewLogin;
@@ -272,8 +376,11 @@
 		};
 		B3C077C11EA8429C0009F898 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FD2C38F08C525B475A98C388 /* Pods-NewLogin.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = NewLogin/NewLogin.entitlements;
+				DEVELOPMENT_TEAM = 8QVZCUS74U;
 				INFOPLIST_FILE = NewLogin/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = vn.unlocked.NewLogin;
@@ -301,6 +408,7 @@
 				B3C077C11EA8429C0009F898 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
